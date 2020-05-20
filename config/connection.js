@@ -1,11 +1,10 @@
 const mysql = require("mysql");
-const util = require("util");
 
 var connection = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
-  port: "3306",
+  port: "1",
   database: "burgersDB",
 });
 
@@ -16,7 +15,5 @@ connection.connect(function (err) {
   }
   console.log("connected as id " + connection.threadId);
 });
-
-connection.query = util.promisify(connection.query);
 
 module.exports = connection;
