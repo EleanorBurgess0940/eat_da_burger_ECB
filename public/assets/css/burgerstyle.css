@@ -4,3 +4,21 @@ body {
 .card {
   background-color: white;
 }
+img {
+  max-width: 400px;
+}
+.header {
+  text-align: center;
+}
+
+.holder {
+  display: flex;
+}
+
+.left-side {
+  flex: 0 0 50%;
+}
+
+.right-side {
+  flex: 1;
+}

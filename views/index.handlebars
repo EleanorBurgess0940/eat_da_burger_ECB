@@ -1,27 +1,28 @@
-<h1>Can we take your order?</h1>
-<div class="container">
-    <div class="col-5 float-left">
+<div class="header">
+    <h1>Can we take your order?</h1>
+    <img src="/assets/img/hamburger.png" class="rounded" alt="hamburger">>
+</div>
+<div class="container holder">
+    <div class="col-5 left-side">
         <div class="card">
-            <h2>Burgers that are up for grabs!</h2>
+            <h2 class="header">Burgers that are up for grabs!</h2>
         </div>
         <div class="card">
             <ul>
                 {{#each burgers}}
                 {{#unless devoured}}
-                <li>
-                    <p>
-                        {{burger_name}}
-                    </p>
-                </li>
+                <p>
+                    {{> burgers/burger-block devour=true}}
+                </p>
                 {{/unless}}
                 {{/each}}
             </ul>
         </div>
     </div>
 
-    <div class="col-5 float-left">
+    <div class="col-5 right-side">
         <div class="card">
-            <h2>Burgers that are devoured</h2>
+            <h2 class="header">Burgers that are devoured</h2>
         </div>
         <div class="card">
             <ul>
