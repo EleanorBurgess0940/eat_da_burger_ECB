@@ -25,13 +25,15 @@
             <h2 class="header">Burgers that are devoured</h2>
         </div>
         <div class="card">
-            <ul>
-                {{#each burgers}}
-                {{#if devoured}}
+
+            {{#each burgers}}
+            {{#if devoured}}
+            <p>
                 {{ burger_name}}
-                {{/if}}
-                {{/each}}
-            </ul>
+            </p>
+            {{/if}}
+            {{/each}}
+
         </div>
     </div>
 </div>
