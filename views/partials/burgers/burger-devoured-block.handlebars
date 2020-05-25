@@ -4,10 +4,9 @@
             {{burger_name}}
         </td>
         <td align="right">
-            <button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
-                {{#if devour}}Devour it!{{/if}}
+            <button class="change-remake" data-id="{{id}}" data-newdevour="{{remake}}">
+                {{#if devoured}}Remake it!{{/if}}
             </button>
-
             <button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
         </td>
     </tr>
