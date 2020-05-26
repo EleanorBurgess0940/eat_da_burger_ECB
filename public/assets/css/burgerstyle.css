@@ -1,17 +1,22 @@
+/* styling of the background */
 body {
   background-color: lightgreen;
 }
+
+/* styling of the image */
 img {
   max-width: 400px;
 }
+
+/* styling of the header */
 .header {
   text-align: center;
 }
 
+/* styling of the columns */
 .holder {
   display: flex;
 }
-
 .left-side {
   flex: 0 0 50%;
 }

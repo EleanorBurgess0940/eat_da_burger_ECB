@@ -33,11 +33,11 @@ The user will be told what port the app is being served on and can go to localho
 
 ### Use
 
-AS A user, I want to be able to write and save notes
+AS A user, I want to be able to add and save burgers
 
-I WANT to be able to delete notes I've written before
+I WANT to be able to delete burgers that have been written in the past
 
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
+ALSO I want to be able to remake burgers that have been devoured.
 
 ### Installation
 
@@ -53,4 +53,4 @@ If you have an questions about the repo, open an issue or contact Elly Burgess d
 
 ### Images
 
-![Note Taker](public/assets/img/Screen.PNG)
+![Screenshot](public/assets/img/Screen.PNG)

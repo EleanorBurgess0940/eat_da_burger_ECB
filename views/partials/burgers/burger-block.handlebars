@@ -1,8 +1,10 @@
 <table width='90%'>
     <tr>
+        <!--This partial handlebars will be used to diplay the non devoured burgers -->
         <td>
             {{burger_name}}
         </td>
+        <!--Two buttons that will change the burger the devour button or delete the burgetr completely -->
         <td align="right">
             <button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
                 {{#if devour}}Devour it!{{/if}}

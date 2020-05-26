@@ -1,5 +1,7 @@
+//import the orm to create functions that will interact wiwth this file
 var orm = require("../config/orm.js");
 
+//adds function to the selectAll insertOne and updateOne
 var burger = {
   selectAll: function (cb) {
     orm.selectAll("burgers", function (res) {
@@ -23,4 +25,6 @@ var burger = {
     });
   },
 };
+
+//Exports the database for the controlle
 module.exports = burger;

@@ -1,8 +1,11 @@
 <table width='90%'>
     <tr>
+        <!--This partial handlebars will be used to diplay the non devoured-->
         <td>
             {{burger_name}}
         </td>
+        <!--Two buttons that will change the burger the remake button or delete the burgetr completely -->
+
         <td align="right">
             <button class="change-remake" data-id="{{id}}" data-newdevour="{{remake}}">
                 {{#if devoured}}Remake it!{{/if}}
